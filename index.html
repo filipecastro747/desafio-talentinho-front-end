@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Aplicativo de Feedback</title>
+    <!-- Chamando o CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Chamando o JavaScript-->
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Tela 1: Introdução -->
+    <div id="tela1" class="tela">
+        <h1>Bem-vindo ao Prêmio Talentinho Front-end!</h1>
+        <h2> Equipe: Tropa 6  </h2>
+        <h5>Membros:Filipe,Lucas,Bruno,Felipe,Manuela e Sofia</h5>
+        <h4>Tema da Aplicação: desinformação e fake news</h4>
+        <button id="btn-ir-tela2">Ir para a próxima tela</button>
+    </div>
+
+    <!-- Tela 2: Conteúdo Texto -->
+    <div id="tela2" class="tela" style="display: none;">
+        <h2>Conteúdo Informativo</h2>
+        <p>Este é um texto de exemplo para ilustrar o conteúdo desta tela. Clique no botão abaixo para prosseguir.</p>
+        <button id="btn-ir-tela3">Ir para a tela de feedback</button>
+    </div>
+
+    <!-- Tela 3: Feedback -->
+    <div id="tela3" class="tela" style="display: none;">
+        <h3>Deixe seu Feedback</h3>
+        <button id="btn-curtir">Curtir 👍</button>
+        <p id="contador-curtidas">Curtidas: 0</p>
+        <form id="form-feedback">
+            <label for="nome">Seu nome:</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" rows="4" cols="50" placeholder="Escreva sua mensagem" required></textarea>
+            <button type="submit">Enviar Feedback</button>
+        </form>
+        <div id="feedback-resultado"></div>
+    </div>
+
+</body>
+
+</html>
